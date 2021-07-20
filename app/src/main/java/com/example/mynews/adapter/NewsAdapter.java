@@ -30,9 +30,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     ArrayList<NewsArticle> articles;
     ArrayList<NewsArticle> searchArticles;
 
-
-
-
     public NewsAdapter(Context context, ArrayList<NewsArticle> articles) {
         this.context = context;
         this.articles = articles;
@@ -92,7 +89,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
-
             tvName = itemView.findViewById(R.id.tvName);
             tvPublised = itemView.findViewById(R.id.tvPublised);
             tvSourceName = itemView.findViewById(R.id.tvSource);

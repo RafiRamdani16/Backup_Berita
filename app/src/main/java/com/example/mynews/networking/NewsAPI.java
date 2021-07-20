@@ -11,9 +11,6 @@ public interface NewsAPI {
     Call<NewsResponse> getNewsList(@Query("country") String newCountry, @Query("apiKey") String apiKey);
 
     @GET("everything")
-    Call<NewsResponse> getNewsEverythingFilter(@Query("q") String katakunci, @Query("apiKey") String apiKey);
-
-    @GET("everything")
-    Call<NewsResponse> getNewsEverything(@Query("apiKey") String apiKey);
+    Call<NewsResponse> getNewsEverythingFilter(@Query("qInTitle") String katakunci, @Query("apiKey") String apiKey);
 
 }

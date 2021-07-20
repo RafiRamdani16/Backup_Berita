@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MyNews</string>
+
+    <string-array name="country_array">
+        <item>Argentina</item>
+        <item>Indonesia</item>
+        <item>India</item>
+        <item>United State</item>
+        <item>Netherland</item>
+        <item>China</item>
+        <item>Germany</item>
+        <item>Singapore</item>
+        <item>South Korea</item>
+        <item>Saudi Arabia</item>
+    </string-array>
+
 </resources>

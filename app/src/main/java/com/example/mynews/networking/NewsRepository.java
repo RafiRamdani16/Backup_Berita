@@ -61,21 +61,4 @@ public class NewsRepository {
         return newsData;
     }
 
-    public MutableLiveData<NewsResponse> getEverythingtNews(String key){
-        newsApi.getNewsEverything(key).enqueue(new Callback<NewsResponse>() {
-            @Override
-            public void onResponse(Call<NewsResponse> call,
-                                   Response<NewsResponse> response) {
-                if (response.isSuccessful()){
-                    newsData.setValue(response.body());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<NewsResponse> call, Throwable t) {
-                newsData.setValue(null);
-            }
-        });
-        return newsData;
-    }
 }

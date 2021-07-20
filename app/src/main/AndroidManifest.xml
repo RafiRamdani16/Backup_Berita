@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HeadlineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorldNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryCountry"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
